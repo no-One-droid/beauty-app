@@ -1,0 +1,292 @@
+<app-navbar></app-navbar>
+<div class="bg-img"> 
+    <div class="mask-custom">
+        <div class="wel-content">
+            <div class="col-lg-6 col-md-6 col-sm-10">
+                <div class="title-weclocme">
+                    <p>Place Of Your Beauty</p>
+                </div>
+                <div class="heading-welcome">
+                    <h1>We Beauty For Awesome People</h1>
+                </div>
+                <div class="welcome-btn d-flex justify-content-end">
+                    <button type="button" class="btn">
+                        <a href="https://instagram.com/yesitxbilal/profilecard/?igsh=MXZqdXU1bXNzOHNodQ%3D%3D" target="_blank"> 
+                            <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ff497c;"></i>                        </a>
+                    </button>
+                    <button type="button" class="btn ">
+                        <a href="https://wa.me/3233604436" target="_blank">
+                            <i class="fa-brands fa-square-whatsapp fa-2xl" style="color: #ff497c;"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+<!-- services off on different events -->
+
+<div class="container-fluid service-container">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="service-off text-center">
+                <div class="service-heading ">
+                    <h3> Home Saloon Service In Dubai</h3>
+                </div>
+                <div class="">
+                    <h2 class="off-percentage">
+                        Get 30% Off
+                    </h2>
+                </div>
+                <div class="service-btn">
+                    <button type="button" class="btn">
+                        <a href="https://wa.me/3233604436" >
+                            Chat Now
+                            <span class="btn-icon" nz-icon nzType="message" nzTheme="outline"></span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- section for our services what we offer  -->
+<section>
+    <div class="container our-services-continer text-center">
+        <div class="row">
+            <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4">
+                <div class="our-services">
+                    <p class="services-subtitle"> Our Service</p>
+                    <h5 class="our-services-heading">Exclusive 
+                        <span class="services-span">Services</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 services-content" *ngFor="let item of ourServices">
+                <img class="img-fluid" [src]="item.url" alt="">
+                <h6>{{item.title}}</h6>
+                <p>{{item.detail}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section for our process of working  -->
+
+<section>
+    <div class="process-bg-img">
+        <div class="mask">
+            <div class="container process-continer text-center">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 offset-lg-3 offset-xl-3">
+                        <div class="our-process">
+                            <p class="process-subtitle"> Our Process</p>
+                            <h6 class="our-process-heading text-light">Our 
+                                <span class="process-span">Working Process</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class=" col-xl-3 col-lg-3 col-md-6 process-content mt-2-9 " *ngFor="let item of OurProcess">
+                        <img class="rounded-img" [src]="item.url" alt="">
+                        <h6>{{item.title}}</h6>
+                        <p>{{item.detail}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section for our team  -->
+
+<section>
+    <div class="container team-container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 my-5">
+                <div class="row">
+                    <div class="col-md-10 team-img ">
+                        <img class="img-fluid" src="../../../assets/team-05.jpg" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 my-5">
+                <div class="our-team-content d-flex justify-content-start">
+                    <div class="row ">
+                        <div class="col-lg-12">
+                            <div class="mt-3">
+                                <p class="team-subtitle"> Our Team</p>
+                                <h6 class="team-heading">
+                                    Our Experienced Specialists 
+                                </h6>
+                            </div>
+                            <div class="team-paragraph">
+                                <p> 
+                                    Beauty live Best Life is home to a team of highly skilled and certified beauty professionals 
+                                    who are dedicated to providing premium service to each and every one of our clients. 
+                                    Our years of experience Working in Home service ensure that we can provide 
+                                    personalized attention to each and every service we provide.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line my-4">
+                            <hr>
+                        </div>
+                        <div class="team-icons d-flex justify-content-between">
+                            <div class="col-md-6 mb-4">
+                                <div class="icon justify-content-inline">
+                                    <div class="icon-container">
+                                         <img src="../../../assets/icon-02.png" alt="">
+                                         <h4>Experienced</h4>
+                                    </div>
+                                    <div class="text-container">
+                                         <p>Meet Our Experienced Specialists At your place</p>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="icon justify-content-inline">
+                                    <div class="icon-container">
+                                         <img src="../../../assets/icon-31.png" alt="">
+                                         <h4>Services</h4>
+                                    </div>
+                                    <div class="text-container">
+                                         <p>We Provides Best Services with just few Clicks</p>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- section for our prics of service  -->
+
+<section class="pricing-style01 bg-light-yellow">
+    <div class="container">
+        <div class="section-title-03 text-center mb-1-9 mb-md-5">
+            <span class="process-subtitle">Our Prices</span>
+            <h2 class="mb-0 w-sm-60 w-md-40 mx-auto our-process-heading mt-3" >Best <span class="process-span"> Treatments</span></h2>
+        </div>
+        <div class="row g-lg-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="mb-1-6 mb-4" *ngFor="let item of ourPricesR1">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <img [src]="item.url" class="d-none d-sm-block" alt="...">
+                        </div>
+                        <div class="flex-grow-1 ps-sm-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="flex-shrink-0">
+                                    <h5 class="font-weight-600 mb-0">{{item.title}}</h5>
+                                </div>
+                                <div class="flex-grow-1 d-flex">
+                                    <span class="pricing-border"></span>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <h5 class="mb-0">{{item.price}}</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">{{item.detail}}</p>
+                                <p class="border mb-0 pricing-new-box">New</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="150ms">
+                <div class="mb-1-6 mb-4" *ngFor="let item of ourPriceR2">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <img [src]="item.url" class="d-none d-sm-block" alt="...">
+                        </div>
+                        <div class="flex-grow-1 ps-sm-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="flex-shrink-0">
+                                    <h5 class="font-weight-600 mb-0">{{item.title}}</h5>
+                                </div>
+                                <div class="flex-grow-1 d-flex">
+                                    <span class="pricing-border"></span>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <h5 class="mb-0">{{item.price}}</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-0">{{item.detail}}</p>
+                                <p class="border mb-0 pricing-new-box">New</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section for about us  -->
+
+<section id="about">
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <nz-tabset nzCentered nzTabPosition="bottom" nzSize="large" 
+                [nzAnimated]="true" 
+                [nzTabBarStyle]="{ 'font-family': 'Montserrat, sans-serif', 'font-weight': '700', 'font-size': '25px', 'letter-spacing': '0.08rem', 'color': '#ff497c', 'border-top': 'none', 'style': 'none' }" 
+                >
+                    <div *ngFor="let item of aboutItems">
+                        <nz-tab [nzTitle]="item.title">
+                            <div class="card mb-5">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 about-img">
+                                        <img class="img-fluid" [src]="item.image" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 scrollable-content d-flex flex-column">
+                                        <div class="about-content">
+                                            <p class="about-subtitle">{{item.heading}}</p>
+                                            <h2 class="about-heading">{{item.subHeading}}</h2>
+                                            <P class="about-paragraph">{{item.content}}</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nz-tab>
+                    </div>
+                </nz-tabset>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sections for contact us  -->
+ <section id="contact">
+    <div class="ct-bg-img">
+       <div class="ct-mask-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-10 contact-form text-center">
+                    <p class="process-subtitle">Keep Updated</p>
+                    <h6 class="our-process-heading mt-3">Newsletter </h6>
+                    <p class="process-content h6 mt-3">Enter your email to stay in the loop on new collections, pop-up shows and more.</p>
+
+                    <form action="" class="mt-5 d-flex justify-content-inline" >
+                        <input type="email" class="form-control contact-input" placeholder="Email">
+                        <button type="button" class="btn form-btn ms-3 px-4" >SUBSUCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       </div> 
+    </div>
+ </section>
+ <app-footer></app-footer>

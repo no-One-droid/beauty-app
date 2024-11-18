@@ -1,0 +1,129 @@
+.bg-secondary{
+    background-color: #1f2732 !important;
+}
+.text-white{
+    color: #ffffff;
+}
+.mt-5{
+    margin-top: 3rem !important;
+}
+.mt-n5{
+    margin-bottom: 3rem;
+}
+.footer-text-1{
+    font-family: 'play-fair-medium', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+.pb-lg-10, .py-lg-10 {
+    padding-bottom: 5.5rem;
+}
+.pb-1-9, .py-1-9 {
+    padding-bottom: 1.9rem;
+}
+.textwidget .sec-title h3{
+    font-family: 'play-fair-medium', sans-serif;       
+}
+ address{
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+ }
+ .email{
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(255 255 255 / 70%);
+    display: inline-block;
+ }
+ .email a{
+    font-family: 'Mulish', sans-serif;
+    color: rgb(255 255 255 / 70%);
+    font-size: 18px;
+    position: relative;
+    transition: all 0.8s ease;
+ }
+.email a:hover, .email a:active, .email a:focus{
+    color:#ff497c
+}
+.phone a{
+    padding-bottom:0;
+    letter-spacing:-0.05rem;
+    color:#fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.8s ease;
+}
+
+.phone a:hover, .phone a:active, .phone a:focus{
+    color:#ff497c
+}
+
+@media screen and (max-width: 992px) {
+    .pb-lg-10, .py-lg-10 {
+        padding-bottom: 5.5rem;
+    }
+    .mt-n5{
+        margin-bottom: 0rem;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    footer{
+        padding-top:60px
+    }
+    .pb-md-8, .py-md-8 {
+        padding-bottom: 4.5rem;
+    }
+    .mt-5{
+        margin-top: 1rem !important;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .pb-sm-6, .py-sm-6 {
+        padding-bottom: 3.5rem;
+    }
+    .mt-5{
+        margin-top: 0rem;
+    }
+    .footer-text-1{
+        font-size: 30px;
+    }
+}
+.footer-border{
+    border-top: 1px solid #384250;
+}
+.rights-text{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+.text-white-hover{
+    color: #ff497c;
+    transition: all 0.3s ease;
+}
+.text-white-hover:hover{
+    color: #ffffff;
+}
+.social-icon-style1{
+    margin-bottom:0;
+    display:inline-block;
+    padding-left:0px;
+    list-style:none
+}
+.social-icon-style1 li{
+    vertical-align:middle;
+    display:inline-block
+    ;margin-right:5px
+}.social-icon-style1 li a{
+    display:inline-block;
+    font-size:14px;
+    text-align:center;
+    color:#ffffff;
+    background:rgba(255,255,255,0.1);
+    height:41px;
+    line-height:41px;
+    width:41px
+}
+.social-icon-style1 li a:hover{
+    background:#ff497c
+}

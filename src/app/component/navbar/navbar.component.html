@@ -1,0 +1,88 @@
+<nav id="main-navbar" class="navbar navbar-expand-lg fixed-top navbar-before-scroll shadow-0">
+    <a class="navbar-brand" >
+        <div>
+            <img src="../../../assets/logo.png" alt="">
+        </div>      
+    </a>
+    <button class="navbar-toggler toggler-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span nz-icon nzType="menu" nzTheme="outline" style="font-size: 25px; color: #000;"></span>
+    </button>
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item" *ngFor="let item of menuItem"> 
+                    <a class="nav-link"
+                    [href]="item.link"
+                    (click)="item.routLink"
+                    [routerLink]="item.routLink"
+                    (mouseover)="onHovered(item.title)"
+                    >
+                        {{item.title}}
+                    </a>
+                    <div class="dropdown-menu"
+                    *ngIf="hoveredItem === item.title && item.categories.length > 0"
+                    >
+                    <ul class=" list-unstyled" *ngFor="let subCat of item.categories">
+                        <li class="dropdown-list">{{subCat}}</li>
+                    </ul>
+                    </div>
+                </li>
+            </ul>
+            <form class="nput-wrapper d-flex" role="search">
+                <span><i class="fa fa-search fa-xl" style="color: #000;"></i></span>
+            </form>
+        </div>
+      </div>
+</nav>
+
+<!-- <div class="dropdown-menu">
+    
+</div> -->
+<!-- offcanvas on collapsed navbar -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <button type="button" class=" btn close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+            <span nz-icon nzType="close" nzTheme="outline"></span>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <form class=" d-flex" role="search">
+                <input class="form-control input-form me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <li class="nav-item" *ngFor="let item of menuItem; let i=index">
+                <div *ngIf="item.categories.length > 0; else noSubCategories">
+                    <div class="d-flex">
+                        <a
+                          class="nav-link d-flex justify-content-between align-items-center w-100"
+                          href="#"
+                          data-bs-toggle="collapse"
+                          [attr.data-bs-target]="'#collapse' + i"
+                          aria-expanded="false"
+                          [attr.aria-controls]="'collapse' + i"
+                        >
+                          <span>{{ item.title }}</span>
+                          <span nz-icon nzType="plus" nzTheme="outline" class="ms-auto"></span>
+                        </a>
+                    </div>
+                    <div [id]="'collapse' + i" class="accordion-collapse collapse hide" >
+                        <div class="accordion-body">
+                            <ul class="list-unstyled accordion-list">
+                            <li *ngFor="let subCategory of item.categories">
+                                <a class="list-item">{{subCategory}}</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ng-template #noSubCategories>
+                    <a class="nav-link" href="#">{{ item.title }}</a>
+                </ng-template>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <section>
+    <div class="bg-img"></div>
+</section> -->

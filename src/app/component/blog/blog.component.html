@@ -1,0 +1,31 @@
+<div class="bg-img">
+    <div class="mask">
+        <div class="blog-heading text-center">
+            <h1>Blog Standard</h1>
+        </div>
+    </div>
+</div>
+<section >
+    <div class="container blog-container">
+        <div class="row g-xl-5 mt-n2-9">
+            <div class="col-md-6 col-lg-4 mt-2-9 " *ngFor="let item of blog">
+                <article class="card card-style-10 bg-transparent">
+                    <div class="image-box">
+                        <div class="image">
+                            <img  [src]="item.img" alt="...">
+                        </div>
+                        <span class="card-icon font-weight-700 z-index-2">{{item.date}}</span>
+                    </div>
+                    <div class="card-body border-radius-10">
+                        <ul class="list-unstyled mb-3">
+                            <li class="d-inline-block me-3 text-capitalize"><i class="fa-regular fa-user fa-lg align-middle me-2" style="color: #ff497c;"></i><a href="blog-grid.html#!">admin</a></li>
+                            <li class="d-inline-block"><i class="fa-regular fa-message align-middle fa-lg me-2" style="color: #ff497c;"></i> {{item.comment}}</li>
+                        </ul>
+                        <h3 class="mb-3 blog-title"><a href="blog-details.html">{{item.title}}</a></h3>
+                        <a href="blog-details.html" class="read-more">Read more <i class="fa-solid fa-arrow-right align-middle ms-1 fa-lg" style="color: #ff497c;"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

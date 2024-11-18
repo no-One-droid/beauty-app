@@ -1,0 +1,387 @@
+section {
+    scroll-margin-top: 80px; 
+}
+.bg-img{
+    background-image: url(../../../assets/bg-img-3.JPG);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.mask-custom{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(249, 246, 241, 0.6);
+    mask-size: 100%; 
+}
+.wel-content{
+    padding-top: 150px;
+    margin-left: 20%;
+}
+@media (max-width: 580px) {
+    .wel-content{
+      margin-left: 5%;
+    }
+}
+.title-weclocme{
+    font-family: "play-fair-medium", sans-serif;
+    font-size: 17px;
+    color: rgb(255 73 124);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.heading-welcome h1{
+    font-family: "play-fair";
+    color: #000000;
+    letter-spacing: 0.1rem;
+    font-size: 60px;
+}
+.welcome-btn button{
+    font-size:30px;
+    transition: transform 0.3s ease-in-out;
+}
+.welcome-btn button:hover{
+    transform: scale(1.2);
+}
+.service-container{
+    background-color: #2f2e2e;
+    color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.service-heading h3{
+    /* margin: 4rem 0px 1rem; */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+.off-percentage{
+    font-family: "play-fair", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-size: 3rem;
+    margin: 25px 0px;
+}
+.service-btn .btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: rgb(255 73 124);
+    border: none;
+    padding: 6px 20px;
+}
+.service-btn a{
+    color: #000000;
+}
+.btn-icon{
+    font-size: 1.2em; 
+    line-height: 1;
+}
+
+
+/* services section */
+.our-services-continer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.services-subtitle{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255 73 124);
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-left: 3px solid rgb(255 73 124);
+    display: inline-block;
+}
+.our-services-heading{
+    font-family: "play-fair-medium";
+    font-size: 38px;
+    font-weight: 700;
+}
+.services-span{
+    font-weight: lighter;
+}
+@media screen and (max-width: 991px) {
+    .our-services-heading {
+        font-size: 27px;
+    }
+}
+.services-content img{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.services-content h6{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "play-fair-medium", sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+.services-content h6:hover{
+    color: rgb(255 73 124);
+    cursor: pointer;
+}
+.services-content p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+
+/* process css  */
+
+.process-bg-img{
+    background-image: url(../../../assets/bg-process.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.mask {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(31, 39, 50, 0.9); 
+    mask-size: 100%;  
+}
+.process-continer {
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+
+/* .process-continer{
+    padding: 6rem 0rem;
+} */
+.process-subtitle{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255 73 124);
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-left: 3px solid rgb(255 73 124);
+    display: inline-block;
+}
+.our-process-heading{
+    font-family: "play-fair-medium";
+    font-size: 38px;
+    font-weight: 700;
+}
+.process-span{
+    font-weight:lighter;
+}
+@media screen and (max-width: 991px) {
+    .our-process-heading {
+        font-size: 30px;
+    }
+}
+.rounded-img{
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+.process-content h6{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "play-fair-medium", sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+.process-content p{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffffab;
+}
+
+/* out team section css  */
+.team-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 200px;
+    margin: 0 auto;
+}
+.team-subtitle{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255 73 124);
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid rgb(255 73 124);
+    display: inline-block;
+}
+.team-heading{
+    margin-top: 1rem;
+    font-family: "play-fair-medium";
+    font-size: 38px;
+    font-weight: 700;
+}
+.team-paragraph{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    border-left: 3px solid rgb(255 73 124);
+    display: inline-block;
+    padding: 10px 10px 10px 5px;
+    background-image: linear-gradient(to right, #ffd8e3, #fceff3, #fffefe);
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img {
+    width: 70px; 
+    margin-right: 10px; 
+}
+.icon-container h4 {
+    font-family: "play-fair-medium", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.text-container p {
+    font-family: "Montserrat", sans-serif;
+    margin: 20px 0 0 0; 
+    color: #6c757d;
+}
+
+/* pricing section css */
+
+.bg-light-yellow{
+background-color: #f9f6f1;
+padding-top: 90px;
+padding-bottom: 24px;
+}
+.pricing-border{
+    border: 1px dotted #2f2e2e;
+    width: 70%;
+    margin: 0 auto;
+}
+.pricing-new-box{
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+.font-weight-600{
+    font-family: "play-fair-medium", sans-serif;
+}
+
+/* section for about uss  */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img img{
+    max-height: 100%;
+    object-fit: cover;
+}
+.scrollable-content {
+    max-height: 300px; 
+    overflow-y: auto; 
+    margin-top: auto;
+    padding: 0 60px;
+}
+
+@media screen and (max-width: 991px) {
+    .scrollable-content {
+        max-height: 240px; 
+    }
+}
+@media screen and (max-width: 767px) {
+    .scrollable-content {
+        max-height: 180px;
+    }
+}
+.about-subtitle{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255 73 124);
+    font-size: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid rgb(255 73 124);
+    display: inline-block;
+}
+.about-heading{
+    font-family: "play-fair-medium";
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+.about-paragraph{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.02rem;
+    margin-top: 1rem;
+}
+::ng-deep .ant-tabs-tab:hover{
+    color: #ff497c; 
+    transition: background-color 0.3s ease; 
+}
+::ng-deep .ant-tabs-ink-bar {
+    background-color: #ff497c;
+    transition: background-color 0.3s ease;
+}
+::ng-deep .ant-tabs-nav::before {
+    display: none;
+}
+
+/* css for contact us  */
+
+.ct-bg-img{
+    background-image: url(../../../assets/contact-img.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    min-height: 80vh;
+    width: 100%;
+    position: relative;    
+}
+.ct-mask-custom{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgba(221, 218, 213, 0.8);
+    mask-size: 100%; 
+}
+.contact-form{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.contact-input{
+    background-color: transparent;
+    border: 1px solid #5a5353;
+    max-width: 70%;
+    border-radius: 0px;
+    height: 45px;
+}
+
+.contact-input:focus{
+    box-shadow: none;
+}
+.form-btn{
+    border-radius: 0px;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(255 73 124);
+}
+.form-btn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(255 73 124);
+}
+
+
+/* its css  */
+
+

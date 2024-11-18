@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "play-fair";
+    src: url(./assets/PlayfairDisplay-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "play-fair-medium";
+    src: url(./assets/PlayfairDisplay-Medium.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'montserrat-light';
+    src: url(./assets/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'Mulish';
+    src: url(./assets/Mulish-Regular.ttf);
+}

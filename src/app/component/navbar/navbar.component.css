@@ -1,0 +1,121 @@
+/* css for main navbar  */
+.navbar{   
+    color: #ffffff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2px 15px 2px 2px;
+    border-bottom: 1px solid #cac8c8c2;
+    z-index: 1000;
+}
+.navbar-after-scroll{
+    background-color: #ffffff;
+}
+@media (max-width: 991.98px) {
+    #main-navbar {
+      background-color: #ffffff;
+    }
+}
+.navbar-toggler{
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.navbar-brand img{
+    padding-left: 20px;
+    height: 60px;
+    transition: opacity 0.3s ease;
+}
+.nav-item .nav-link{
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 0.3rem;
+    font-family: 'Mulish', sans-serif;
+}
+.nav-item .nav-link:hover{
+    color: rgb(255 73 124);
+}
+@media (max-width: 995.98px) {
+    .nav-link{
+        font-size: 13px;
+    }
+}
+
+/* .input-form{
+    border-radius: 0;
+    border: 1px solid #bbb4b4;
+    height: 40px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.input-form:focus{
+   box-shadow: none;
+   border-color: #706969;
+} */
+
+
+/* css for dropdown o items  */
+.dropdown-menu{
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 2rem;
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.nav-item:hover .dropdown-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-menu .dropdown-list{
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-family: 'Mulish', sans-serif;
+}
+.dropdown-menu .dropdown-list:hover{  
+    color: rgb(255 73 124);
+}
+
+ /* css for offcanvas  */
+.offcanvas{
+    background-color: #ffffff;
+    color: #000;
+    padding: 0px 30px;
+    font-family: "Mulish", sans-serif;  
+}
+.close-btn{
+    font-size: 25px;
+    padding: 0px;
+    color: #000;
+    border: none;
+}
+.offcanvas-body .nav-item{
+    padding: 17px 0px;
+    border-bottom: 1px solid #000;
+}
+.accordion-body{
+    margin-top: 10px;
+}
+.accordion-body .accordion-list{
+    margin: 5px 0px 5px 30px;
+    text-transform: uppercase;
+    font-family: "Mulish", sans-serif;
+}
+.accordion-body .list-item{
+    color: #535050;
+    margin: 40px 0px;
+}
+.accordion-body .list-item:hover{
+    color: rgb(255 73 124);
+}
