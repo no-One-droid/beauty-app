@@ -12,6 +12,13 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { MainComponent } from './main/main.component';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 import { FirstBlogComponent } from './first-blog/first-blog.component';
+import { EyelashServiceComponent } from './eyelash-service/eyelash-service.component';
+import { NailServiceComponent } from './nail-service/nail-service.component';
+import { FacialServiceComponent } from './facial-service/facial-service.component';
+import { MakeUpServiceComponent } from './make-up-service/make-up-service.component';
+import { HairServiceComponent } from './hair-service/hair-service.component';
+import { BodyWaxServiceComponent } from './body-wax-service/body-wax-service.component';
+import { MassageServiceComponent } from './massage-service/massage-service.component';
 
 
 @NgModule({
@@ -22,7 +29,14 @@ import { FirstBlogComponent } from './first-blog/first-blog.component';
     OurservicesComponent,
     BlogComponent,
     MainComponent,
-    FirstBlogComponent
+    FirstBlogComponent,
+    EyelashServiceComponent,
+    NailServiceComponent,
+    FacialServiceComponent,
+    MakeUpServiceComponent,
+    HairServiceComponent,
+    BodyWaxServiceComponent,
+    MassageServiceComponent
   ],
   imports: [
     CommonModule,

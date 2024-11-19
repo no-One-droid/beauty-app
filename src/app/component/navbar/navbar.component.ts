@@ -16,11 +16,12 @@ export class NavbarComponent {
   {
     title : 'home',
     categories: [],
-    routLink: 'main'
+    routLink: ''
   },
   {
     title : 'our Services',
-    categories: ["Eyelesh Service", "Nail Service", "Facial Service", "Make Up Service", "Hair Service", "Body Wax Service", "Massage Home Service",]
+    categories: ["Eyelesh Service", "Nail Service", "Facial Service", "Make Up Service", "Hair Service", "Body Wax Service", "Massage Home Service",],
+    routLink: 'our-services'
   },
   {
     title : 'contact',

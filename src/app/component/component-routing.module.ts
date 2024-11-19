@@ -6,11 +6,17 @@ import { BlogComponent } from './blog/blog.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'our-services', component: OurservicesComponent},
-  {path: 'blog', component: BlogComponent},
-  {path: 'main', component: MainComponent},
-  {path: 'main', redirectTo: 'main', pathMatch: 'full'}
+  {
+    path: '',
+    component: HomeComponent, // Wrapper with Navbar and Footer
+    children: [
+      { path: '', component: MainComponent }, // Default route inside HomeComponent
+      { path: 'our-services', component: OurservicesComponent },
+      { path: 'blog', component: BlogComponent },
+      {path: 'our-services', component: OurservicesComponent}
+    ],
+  },
+  // {path: '', redirectTo: '', pathMatch: 'full'}
 ];
 
 @NgModule({

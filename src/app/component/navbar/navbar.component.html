@@ -13,7 +13,6 @@
                 <li class="nav-item" *ngFor="let item of menuItem"> 
                     <a class="nav-link"
                     [href]="item.link"
-                    (click)="item.routLink"
                     [routerLink]="item.routLink"
                     (mouseover)="onHovered(item.title)"
                     >
@@ -56,10 +55,11 @@
                     <div class="d-flex">
                         <a
                           class="nav-link d-flex justify-content-between align-items-center w-100"
-                          href="#"
+                          [routerLink]="item.routLink"
                           data-bs-toggle="collapse"
                           [attr.data-bs-target]="'#collapse' + i"
                           aria-expanded="false"
+                          
                           [attr.aria-controls]="'collapse' + i"
                         >
                           <span>{{ item.title }}</span>
