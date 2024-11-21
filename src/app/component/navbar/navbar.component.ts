@@ -35,13 +35,14 @@ export class NavbarComponent {
   {
     title : 'contact',
     categories: [],
-    link: '#contact',
-    routLink: 'goToContact()'
+    fragment: 'contact',
+    routLink: ''
   },
   {
     title : 'About',
     categories: [],
-    link: '#about',
+    fragment: 'about',
+    routLink: ''
   },
   {
     title : 'Blog',

@@ -11,11 +11,12 @@
 .navbar-after-scroll{
     background-color: #ffffff;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
     #main-navbar {
       background-color: #ffffff;
     }
 }
+
 .navbar-toggler{
     background: none;
     border: none;
@@ -39,41 +40,11 @@
 .nav-item .nav-link:hover{
     color: rgb(255 73 124);
 }
-@media (max-width: 995.98px) {
+@media (max-width: 991px) {
     .nav-link{
         font-size: 13px;
     }
 }
-/* .search-dropdown {
-    position: absolute; 
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; 
-    z-index: 1050; 
-    transition: all 0.3s ease;
-  }
-  
-  .search-dropdown.show {
-    display: block;
-  }
-  .search-dropdown form {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .search-dropdown input {
-    max-width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
-  }
-  #main-navbar {
-    z-index: 1100;
-  } */
-
 
 /* css for dropdown o items  */
 .dropdown-menu{
@@ -130,8 +101,13 @@
 }
 .accordion-body .list-item{
     color: #535050;
-    margin: 40px 0px;
+    margin-bottom: 40px;
 }
 .accordion-body .list-item:hover{
     color: rgb(255 73 124);
+}
+@media screen and (min-width: 991px) {
+    .offcanvas{
+        z-index: -1;
+    }
 }

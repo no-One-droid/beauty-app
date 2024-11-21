@@ -112,9 +112,10 @@
 }
 .social-icon-style1 li{
     vertical-align:middle;
-    display:inline-block
-    ;margin-right:5px
-}.social-icon-style1 li a{
+    display:inline-block;
+    margin-right:5px
+}
+.social-icon-style1 li a{
     display:inline-block;
     font-size:14px;
     text-align:center;
