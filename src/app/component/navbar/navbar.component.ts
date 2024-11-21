@@ -12,6 +12,7 @@ export class NavbarComponent {
   
   hoveredItem: string| null = null;
   navbarScrolled: boolean = false;
+  isSearchDropdownOpen: boolean = false;
  menuItem = [
   {
     title : 'home',
@@ -20,7 +21,15 @@ export class NavbarComponent {
   },
   {
     title : 'our Services',
-    categories: ["Eyelesh Service", "Nail Service", "Facial Service", "Make Up Service", "Hair Service", "Body Wax Service", "Massage Home Service",],
+    categories: [
+      {name: "Eyelesh Service", rout: 'eyeLash'},
+      {name: "Hair Service", rout: 'hair'},
+      {name: "Nail Service", rout: 'nail'},
+      {name: "Make Up Service", rout: 'make-Up'},
+      {name: "Facial Service", rout: 'Facial'},
+      {name: "Body Wax Service", rout: 'body-Wax'},
+      {name: "Massage Home Service", rout: 'massage'},
+     ],
     routLink: 'our-services'
   },
   {
@@ -71,6 +80,10 @@ onWindowScroll(){
   this.router.navigate(['']).then(()=>{
     this.viewpScroll.scrollToAnchor('contact');
   });
+ }
+
+ toggleSearchDropdown(){
+  this.isSearchDropdownOpen = !this.isSearchDropdownOpen;
  }
 
 //handle offcanvas open and close on different screens

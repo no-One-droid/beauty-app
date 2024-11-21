@@ -44,19 +44,35 @@
         font-size: 13px;
     }
 }
-
-/* .input-form{
-    border-radius: 0;
-    border: 1px solid #bbb4b4;
-    height: 40px;
-    background-color: transparent;
-    align-items: center;
-}
-
-.input-form:focus{
-   box-shadow: none;
-   border-color: #706969;
-} */
+/* .search-dropdown {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; 
+    z-index: 1050; 
+    transition: all 0.3s ease;
+  }
+  
+  .search-dropdown.show {
+    display: block;
+  }
+  .search-dropdown form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .search-dropdown input {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  #main-navbar {
+    z-index: 1100;
+  } */
 
 
 /* css for dropdown o items  */

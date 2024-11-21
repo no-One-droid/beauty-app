@@ -14,7 +14,7 @@
                         <img  [src]="item.serviceImg" alt="..." class="img-fluid">
                         <div class="card-icon"><img [src]="item.serviceIcon" alt="..."></div>
                     </div>
-                    <h3 class="mb-3 card-heading"><a href="services-details.html">{{item.serviceTitle}}</a></h3>
+                    <h3 class="mb-3 card-heading"><a [routerLink]="item.routeLink">{{item.serviceTitle}}</a></h3>
                     <p class="card-text">{{item.serviceDetail}}</p>
                 </div>
             </div>
@@ -76,15 +76,11 @@
             </div>
             <div class="col-lg-6 ">
                 <div class="text-center why-choose-img position-relative">
-                    <img src="../../../assets/why-choose-01.jpg" class="border-radius-10 z-index-9 position-relative img-fluid" alt="...">
-                    <!-- <div class="why-choose-shape-1 d-none d-md-block">
-                        <img src="../../../assets/shape-11.png" alt="...">
-                    </div> -->
+                    <img src="../../../assets/why-choose-01.jpg" class="border-radius-10 z-index-9 position-relative img-fluid" alt="..."> 
                 </div>
             </div>`
         </div>
     </div>
-    <!-- <div class="position-absolute top-n10 top-md-n20 left-n30 left-lg-n20 opacity2">
-        <img src="img/icons/icon-33.png" alt="...">
-    </div> -->
 </section>
+
+<!-- <router-outlet></router-outlet> -->

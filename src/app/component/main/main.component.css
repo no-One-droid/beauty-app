@@ -56,7 +56,7 @@ section {
 .service-heading h3{
     /* margin: 4rem 0px 1rem; */
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'play-fair-medium', sans-serif;
     color: #ffffff;
 }
 .off-percentage{
@@ -94,7 +94,7 @@ section {
 .services-subtitle{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     color: rgb(255 73 124);
     padding-left: 1rem;
     font-size: 1rem;
@@ -130,7 +130,7 @@ section {
     cursor: pointer;
 }
 .services-content p{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     font-size: 15px;
 }
 
@@ -164,7 +164,7 @@ section {
 .process-subtitle{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     color: rgb(255 73 124);
     padding-left: 1rem;
     font-size: 1rem;
@@ -184,6 +184,11 @@ section {
         font-size: 30px;
     }
 }
+@media screen and (max-width: 767px) {
+    .our-process-heading {
+        margin-bottom: 2rem;
+    }
+}
 .rounded-img{
     border-radius: 50%;
     margin-bottom: 24px;
@@ -196,7 +201,7 @@ section {
     letter-spacing: 0.05em;
 }
 .process-content p{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     color: #ffffffab;
 }
 
@@ -211,7 +216,7 @@ section {
 .team-subtitle{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     color: rgb(255 73 124);
     font-size: 1rem;
     padding-left: 1rem;
@@ -225,7 +230,7 @@ section {
     font-weight: 700;
 }
 .team-paragraph{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     font-size: 15px;
     letter-spacing: 0.1rem;
     margin-top: 1rem;
@@ -251,9 +256,14 @@ section {
 }
 
 .text-container p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     margin: 20px 0 0 0; 
     color: #6c757d;
+}
+@media screen and (max-width: 767px) {
+    .team-heading{
+        font-size: 25px;
+    }
 }
 
 /* pricing section css */
@@ -292,21 +302,10 @@ padding-bottom: 24px;
     margin-top: auto;
     padding: 0 60px;
 }
-
-@media screen and (max-width: 991px) {
-    .scrollable-content {
-        max-height: 240px; 
-    }
-}
-@media screen and (max-width: 767px) {
-    .scrollable-content {
-        max-height: 180px;
-    }
-}
 .about-subtitle{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     color: rgb(255 73 124);
     font-size: 1rem;
     padding-left: 1rem;
@@ -320,10 +319,31 @@ padding-bottom: 24px;
     letter-spacing: 0.05rem;
 }
 .about-paragraph{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     font-size: 15px;
     letter-spacing: 0.02rem;
     margin-top: 1rem;
+}
+@media screen and (max-width: 991px) {
+    .scrollable-content {
+        max-height: 240px; 
+    }
+}
+@media screen and (max-width: 767px) {
+    .scrollable-content {
+        max-height: 180px;
+    }
+    .about-img img{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .about-img img{
+        margin-bottom: 2rem;
+    }
+    .about-heading{
+        font-size: 18px !important;
+    }
 }
 ::ng-deep .ant-tabs-tab:hover{
     color: #ff497c; 
@@ -372,13 +392,15 @@ padding-bottom: 24px;
 }
 .form-btn{
     border-radius: 0px;
-    border: none;
+    border: 1px solid rgb(255 73 124);
+    display: block;
+    position: relative;
     font-weight: 600;
     background-color: rgb(255 73 124);
+    transition: all 0.3s ease;
 }
 .form-btn:hover{
     background-color: transparent;
-    border: 1px solid rgb(255 73 124);
 }
 
 

@@ -22,17 +22,30 @@
                     *ngIf="hoveredItem === item.title && item.categories.length > 0"
                     >
                     <ul class=" list-unstyled" *ngFor="let subCat of item.categories">
-                        <li class="dropdown-list">{{subCat}}</li>
+                        <li class="dropdown-list" [routerLink]="subCat.rout">{{subCat.name}}</li>
                     </ul>
                     </div>
                 </li>
             </ul>
-            <form class="nput-wrapper d-flex" role="search">
-                <span><i class="fa fa-search fa-xl" style="color: #000;"></i></span>
-            </form>
+            <!-- <form class="nput-wrapper d-flex ms-4" role="search">
+                <span (click)="toggleSearchDropdown()"><i class="fa fa-search fa-xl"  style="color: #585555;"></i></span>
+            </form> -->
         </div>
       </div>
+      <!-- <div
+        class="search-dropdown w-100 row"
+        [class.show]="isSearchDropdownOpen"
+      >
+        <form class="p-3">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Search here..."
+            />
+        </form>
+  </div> -->
 </nav>
+
 
 <!-- <div class="dropdown-menu">
     
@@ -70,7 +83,7 @@
                         <div class="accordion-body">
                             <ul class="list-unstyled accordion-list">
                             <li *ngFor="let subCategory of item.categories">
-                                <a class="list-item">{{subCategory}}</a>
+                                <a class="list-item" >{{subCategory}}</a>
                             </li>
                             </ul>
                         </div>

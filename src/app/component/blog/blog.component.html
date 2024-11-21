@@ -19,8 +19,8 @@
                             <li class="d-inline-block me-3 text-capitalize"><i class="fa-regular fa-user fa-lg align-middle me-2" style="color: #ff497c;"></i><a href="blog-grid.html#!">admin</a></li>
                             <li class="d-inline-block"><i class="fa-regular fa-message align-middle fa-lg me-2" style="color: #ff497c;"></i> {{item.comment}}</li>
                         </ul>
-                        <h3 class="mb-3 blog-title"><a href="blog-details.html">{{item.title}}</a></h3>
-                        <a href="blog-details.html" class="read-more">Read more <i class="fa-solid fa-arrow-right align-middle ms-1 fa-lg" style="color: #ff497c;"></i></a>
+                        <h3 class="mb-3 blog-title"><a [routerLink]="item.routLink">{{item.title}}</a></h3>
+                        <a [routerLink]="item.routLink" class="read-more">Read more <i class="fa-solid fa-arrow-right align-middle ms-1 fa-lg" style="color: #ff497c;"></i></a>
                     </div>
                 </article>
             </div>

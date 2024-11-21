@@ -7,6 +7,67 @@
 .blog-container{
     margin: 9rem auto;
 }
+/* .services-section{
+    background-color: #FFFFFF;
+    padding: 140px 0px 4rem;
+} */
+.section-title-04 .sm-title{
+    position:relative;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:15px;
+    font-family: "Mulish", sans-serif;
+    display:inline-block;
+    margin-bottom:12px;
+    color:#ff497c;
+    z-index:9;
+    padding-top: 140px;
+}
+.section-title-04 .title-main2{
+    position:relative;
+    z-index:9;
+    font-family: 'play-fair', sans-serif;
+    font-size:40px
+}
+.section-title-04 .line{
+    content:"";
+    position:absolute;
+    width:65px;
+    height:2px;
+    bottom:-17px;
+    background-color:#ff497c
+}
+.section-title-04.center .line{
+    left:50%;
+    transform:translateX(-50%)
+}
+.section-title-04 .line:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:70%;
+    width:8px;
+    height:2px;
+    background-color:#fdf5e6
+}
+.section-title-04 .line.black:before{
+    background-color:#1f2732;
+}
+@media screen and (max-width: 1199px){
+    .section-title-04 .title-main2{
+        font-size:36px
+    }
+}
+@media screen and (max-width: 991px){
+    .section-title-04 .title-main2{
+        font-size:30px
+    }
+}
+@media screen and (max-width: 767px){
+    .section-title-04 .title-main2{
+        font-size:25px
+    }
+}
 .card-style-10{
     border:none;
     border-radius:0;
@@ -39,7 +100,8 @@
     display:block;
     text-align:center;
     margin-bottom:10px
-}.card-style-10 .card-icon{
+}
+.card-style-10 .card-icon{
     width:56px;
     height:56px;
     background-color:#ff497c;

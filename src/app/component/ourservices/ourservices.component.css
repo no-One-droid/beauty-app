@@ -1,7 +1,6 @@
 .services-section{
     background-color: #f9f6f1;
     padding: 140px 0px 4rem;
-
 }
 .section-title-04 .sm-title{
     position:relative;
@@ -61,12 +60,9 @@
     }
 }
 
-.card-style-01{
+/* .card-style-01{
     background-color:transparent;
     margin-bottom: 2.5rem;
-}
-.card-style-01 .border-left-highlight{
-    border-left: 1px solid #42545e;
 }
 .card-style-01 .card-img{
     width:171px;
@@ -196,7 +192,7 @@
     .card-style-01 .card-hover-img{
         left:0
     }
-}
+} */
 .why-choose-01{
     margin: 8rem 0rem;
 }
