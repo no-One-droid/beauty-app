@@ -41,6 +41,7 @@ section {
     font-size: 60px;
 }
 .welcome-btn button{
+    border: none;
     font-size:30px;
     transition: transform 0.3s ease-in-out;
 }

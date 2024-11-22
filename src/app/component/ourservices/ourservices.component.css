@@ -202,15 +202,15 @@
     font-size: 16px;
     margin-bottom: 2rem;
 }
-.left-pd-4{
-    padding-right: 4rem !important;
+.right-pd-4{
+    padding-right: 4rem;
 }
 @media screen and (max-width: 991px) {
     .why-choose-01{
         margin: 4rem 0rem;
     }
-    .left-pd-4{
-        padding-right: 0rem;
+    .right-pd-4{
+        padding-right: 0rem !important;
         padding-bottom: 4rem;
     }
 }

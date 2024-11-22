@@ -34,7 +34,7 @@ export class TranslateWidgetComponent implements AfterViewInit, OnDestroy{
     if (typeof google !== 'undefined' && google.translate) {
       const translateElement = new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'ar,de,en,nl',
+        includedLanguages: 'ar,de,en,nl,zh-CN,zh-TW',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
     }

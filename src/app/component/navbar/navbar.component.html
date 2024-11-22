@@ -28,9 +28,6 @@
                     </div>
                 </li>
             </ul>
-            <!-- <form class="nput-wrapper d-flex ms-4" role="search">
-                <span (click)="toggleSearchDropdown()"><i class="fa fa-search fa-xl"  style="color: #585555;"></i></span>
-            </form> -->
         </div>
       </div>
 </nav>
@@ -73,12 +70,9 @@
                     </div>
                 </div>
                 <ng-template #noSubCategories>
-                    <a class="nav-link" [routerLink]="item.routLink" data-bs-dismiss="offcanvas">{{ item.title }}</a>
+                    <a class="nav-link" [routerLink]="item.routLink" data-bs-dismiss="offcanvas" [fragment]="item.fragment ">{{ item.title }}</a>
                 </ng-template>
             </li>
         </ul>
     </div>
 </div>
-<!-- <section>
-    <div class="bg-img"></div>
-</section> -->
