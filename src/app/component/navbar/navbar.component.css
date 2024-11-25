@@ -11,12 +11,11 @@
 .navbar-after-scroll{
     background-color: #ffffff;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     #main-navbar {
       background-color: #ffffff;
     }
-}
-
+} */
 .navbar-toggler{
     background: none;
     border: none;

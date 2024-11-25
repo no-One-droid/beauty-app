@@ -12,6 +12,7 @@ import { FacialServiceComponent } from './facial-service/facial-service.componen
 import { MassageServiceComponent } from './massage-service/massage-service.component';
 import { BodyWaxServiceComponent } from './body-wax-service/body-wax-service.component';
 import { FirstBlogComponent } from './first-blog/first-blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: '', component: MainComponent }, // Default route inside HomeComponent
       { path: 'blog', component: BlogComponent },
       {path: 'blog-detail', component: FirstBlogComponent},
+      {path: 'contact', component: ContactComponent},
       {path: 'our-services', component: OurservicesComponent},
       {path: 'eyeLash', component: EyelashServiceComponent},
       {path: 'make-Up', component: MakeUpServiceComponent},
