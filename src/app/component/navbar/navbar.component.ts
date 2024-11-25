@@ -35,8 +35,8 @@ export class NavbarComponent {
   {
     title : 'contact',
     categories: [],
-    fragment: 'contact',
-    routLink: ''
+    // fragment: 'contact',
+    routLink: 'contact'
   },
   {
     title : 'About',

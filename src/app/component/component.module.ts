@@ -19,6 +19,7 @@ import { MakeUpServiceComponent } from './make-up-service/make-up-service.compon
 import { HairServiceComponent } from './hair-service/hair-service.component';
 import { BodyWaxServiceComponent } from './body-wax-service/body-wax-service.component';
 import { MassageServiceComponent } from './massage-service/massage-service.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { MassageServiceComponent } from './massage-service/massage-service.compo
     MakeUpServiceComponent,
     HairServiceComponent,
     BodyWaxServiceComponent,
-    MassageServiceComponent
+    MassageServiceComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

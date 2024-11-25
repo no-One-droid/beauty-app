@@ -5,7 +5,7 @@
     background-color:#f9f6f1
 }
 .blog-container{
-    margin: 9rem auto;
+    margin: 4rem auto;
 }
 /* .services-section{
     background-color: #FFFFFF;
@@ -223,7 +223,7 @@ h5{
     margin-bottom: 1rem;
     font-family: 'Mulish', sans-serif;
 }
-.btn-style1{
+/* .btn-style1{
     padding: 12px 36px;
     font-family: 'Mulish', sans-serif;
     font-size: 15px;
@@ -232,6 +232,25 @@ h5{
 }
 .btn-style1:hover{
     background-color: #42545e;
+} */
+.btn-style1{
+    cursor:pointer;
+    display:inline-block;
+    position:relative;
+    font-size:15px;
+    font-weight:700;
+    line-height:26px;
+    color:#ffffff;
+    background:#ff497c;
+    padding:14px 32px !important;
+    border-radius:0;
+    z-index:1;
+    text-transform:uppercase;
+    transition:all 0.4s ease-in-out 0s;
+    border-radius:2px
+}
+.btn-style1:hover{
+    background:#1f2732
 }
 .blog-sidebar .widget{
     padding: 30px 25px;
